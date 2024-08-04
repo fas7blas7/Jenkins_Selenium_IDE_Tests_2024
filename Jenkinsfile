@@ -2,22 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage("") {
+        stage("Checkout code") {
             //checkout the repository
             steps {
                 git branch: 'main', url: 'https://github.com/fas7blas7/Jenkins_Selenium_IDE_Tests_2024'
             }
         }
-        stage("") {
+        stage("Setup dot net") {
             //install dot net
         }
-        stage("") {
+        stage("Restore dependencies") {
             //install dependencies
         }
-        stage("") {
+        stage("Build") {
             //build
         }
-        stage("") {
+        stage("Run tests") {
             //run tests
         }
     }
